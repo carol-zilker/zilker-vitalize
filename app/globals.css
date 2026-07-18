@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffafb;
+  --foreground: #1a1a1a;
+  --primary: #1a1a1a;
+  --primary-foreground: #f5e7e9;
+  --secondary: #f5e7e9;
+  --secondary-foreground: #1a1a1a;
+  --accent: #dfafb6;
+  --accent-foreground: #1a1a1a;
+  --muted: #f5e7e9;
+  --muted-foreground: #8e7c80;
+  --border: #ecd9dc;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --radius: 0.875rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-sm: calc(var(--radius) - 8px);
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
